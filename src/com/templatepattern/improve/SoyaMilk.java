@@ -1,4 +1,4 @@
-package com.templatepattern;
+package com.templatepattern.improve;
 
 /**
  * @author 86176
@@ -7,7 +7,9 @@ public abstract class SoyaMilk {
 
     public final void make() {
         select();
-        add();
+        if (customerWantCondiments()) {
+            add();
+        }
         soak();
         beat();
     }
@@ -24,5 +26,9 @@ public abstract class SoyaMilk {
 
     private void beat() {
         System.out.println("4");
+    }
+
+    boolean customerWantCondiments() {
+        return true;
     }
 }
