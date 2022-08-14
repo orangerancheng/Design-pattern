@@ -1,6 +1,7 @@
 package com.iterator;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -12,6 +13,8 @@ import java.util.List;
 public class Client {
     public static void main(String[] args) {
         List<College> collegeList = new ArrayList<College>();
+
+        LinkedList<Object> objects = new LinkedList<>();
 
         ComputerCollege computerCollege = new ComputerCollege();
         InfoCollege infoCollege = new InfoCollege();
